@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+</nav>
+<head>
+<style>
+  body {background-color:rgb(98, 175, 124);}
+  h1 {color:rgb(0, 0, 0);text-align:center;}
+  h1 {font-family:"papyrus",Fantasy}
+  footer {color:rgb(0, 0, 0);
+          text-align:center;position:fixed;bottom:0;width:100%;}
+</style>
+</head>
+<body>
+  <h1><b>Vj's Drive Inn..!!</b></h1><br>
+  
+  <form method="POST">
+    <center>
+    <div>
+      <label for="user_firstname">First Name</label>
+      <input type="text" id="user_firstname" name="user_firstname" minlength="4" placeholder="Enter name..." maxlength="10" required>
+    </div><br>
+    <div>
+      <label for="user_lastname">Last Name</label>
+      <input type="text" id="user_lastname" name="user_lastname" placeholder="Enter name..."minlength="4" maxlength="10" required>
+    </div><br>
+    <div>
+      <label for="user_email">Email</label>
+      <input type="email" id="user_email" name="user_email" placeholder="Enter email..."required>
+    </div><br>
+    <div>
+      <label for="booking_date">Booking Date</label>
+      <input type="date" id="booking_date" name="booking_date">
+    </div><br>
+    <div>
+      <label for="number_of_people">People's Count</label>
+      <input type="range" id="number_of_people" name="number_of_people" min="1" max="16" value="2" oninput="this.nextElementSibling.value=this.value">
+      <output>2</output>
+    </div><br>
+    <div>
+      <label for="booking_locations">Location</label>
+      <input id="booking_locations" name="booking_locations" placeholder="Select desired location..." list="locations">
+      <datalist id="locations">
+        <option value="chennai"></option>
+        <option value="coimbatore"></option>
+        <option value="erode"></option>
+        <option value="tiruppur"></option>
+        <option value="palakkad"></option>
+      </datalist>
+    </div>
+    </center><br>
+    <fieldset id="size">
+      <label>
+        <input type="radio" value="1" name="size">1 person 
+      </label>
+      <label>
+        <input type="radio" value="2" name="size">2 persons 
+      </label>
+      <label>
+        <input type="radio" value="3" name="size">3 persons 
+      </label>
+      <label>
+        <input type="radio" value="4" name="size" checked>4 persons 
+      </label>
+      <label>
+        <input type="radio" value="5" name="size">5 persons 
+      </label>
+      <label>
+        <input type="radio" value="6" name="size">6 persons 
+      </label>
+      <label>
+        <input type="radio" value="7" name="size">7 persons 
+      </label>
+      <label>
+        <input type="radio" value="8" name="size">8 persons
+      </label>
+    </fieldset><br>
+    <fieldset id="seating">
+      <label>
+        <input type="radio" name="seating">indoor seating..
+      </label>
+      <label>
+        <input type="radio" name="seating" checked>outdoor seating..
+      </label>
+    </fieldset><br>
+    <p><center>
+    <div>
+      <label>
+        <input type="checkbox" id="agree" name="agree" required>
+        I agree to the cancellation policy....
+      </label>
+    </div>
+    <br>
+    <div>
+      <button type="submit">BOOK NOW...!!</button>
+    </div></p></center>
+  </form>
+</body>
+<footer>
+  <p>copyrights reserved @vj's restaurant</p>
+</footer>
